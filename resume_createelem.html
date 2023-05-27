@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <title>Document</title>
+    <style>
+     h1, h2, h3 {
+  margin: 0;
+  font-weight: normal;
+}
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+h3 {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+p {
+  margin: 0;
+}
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script>
+        const myElement = React.createElement('div', {}, '',
+            [React.createElement('div', { className: "header" },
+                React.createElement('h1', {}, 'Prafulla Joshi'),
+                React.createElement('p', {}, 'Software developer'),
+            ),
+
+            React.createElement('hr'),
+            React.createElement('div', {},
+                React.createElement('h2', {}, 'Summary'),
+                React.createElement('p', {}, 'Highly motivated and results-driven software engineer with over 5 years of experience in developing web applications. Strong problem-solving skills and ability to work effectively in a team environment.')),
+
+            React.createElement('hr'),
+            React.createElement('div', {},
+                React.createElement('h2', {}, 'Skills'),
+                React.createElement('li', {}, 'Proficient in HTML, CSS, and JavaScript'),
+                React.createElement('li', {}, 'Strong understanding of web development best practices'),
+                React.createElement('li', {}, 'Experience with ReactJs'),
+                React.createElement('li', {}, 'Excellent problem-solving and analytical skills'),
+            ),
+
+            React.createElement('hr'),
+            React.createElement('div', {},
+                React.createElement('h2', {}, 'Experience'),
+                React.createElement('h3', {}, 'Software Intern'),
+                React.createElement('p', {}, 'June 2022 - Present'),
+                React.createElement('li', {}, 'Develop and maintain web applications using ReactJs'),
+                React.createElement('li', {}, 'Collaborate with team members to identify and solve technical challenges'),
+                React.createElement('li', {}, 'Contribute to the development of Realtime web Applications'),
+
+            ),
+
+            React.createElement('hr'),
+            React.createElement('div', {},
+                React.createElement('h2', {}, 'Education'),
+                React.createElement('p', {}, 'Bachelor of Electrinics and Telecommunication, University of Pune'),
+
+            )]);
+
+
+
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(myElement);
+
+
+    </script>
+
+</body>
+
+</html>
